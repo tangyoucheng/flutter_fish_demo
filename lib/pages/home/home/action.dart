@@ -1,12 +1,12 @@
 import 'package:fish_redux/fish_redux.dart';
 
-// 首页的AppBar action
+// 首页的 action
 // Effect 接受处理的 Action，以 on{Verb} 命名
 // Reducer 接受处理的 Action，以{verb} 命名
-enum HomeAppBarAction { action }
+enum HomeAction { action }
 
-class HomeAppBarActionCreator {
+class HomeActionCreator {
   static Action onAction() {
-    return const Action(HomeAppBarAction.action,payload: null);
+    return const Action(HomeAction.action, payload: null);
   }
 }

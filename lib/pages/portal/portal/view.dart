@@ -4,6 +4,6 @@ import 'package:flutter/material.dart';
 import 'action.dart';
 import 'state.dart';
 
-Widget buildView(HomePageState state, Dispatch dispatch, ViewService viewService) {
+Widget buildView(PortalState state, Dispatch dispatch, ViewService viewService) {
   return Container();
 }
