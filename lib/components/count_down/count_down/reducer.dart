@@ -29,16 +29,6 @@ CountDownState _onRunTimer(CountDownState state, Action action) {
 /// 启动倒计时的计时器。
 CountDownState _startTimer(CountDownState state, Action action) {
   final CountDownState newState = state.clone();
-
-  /// 启动倒计时的计时器。
-//      setState(() {});
-//  if (newState.seconds <= 1) {
-////        widget.onCountDownFinishCallBack(true);
-//    _cancelTimer(state, action);
-//    return newState;
-//  }
-//  newState.seconds--;
-  newState.seconds = action.payload;
   return newState;
 }
 
@@ -46,5 +36,6 @@ CountDownState _startTimer(CountDownState state, Action action) {
 CountDownState _cancelTimer(CountDownState state, Action action) {
   final CountDownState newState = state.clone();
   newState.countDownFinish = true;
+  newState.timer?.cancel();
   return newState;
 }

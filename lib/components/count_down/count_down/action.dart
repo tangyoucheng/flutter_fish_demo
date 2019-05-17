@@ -22,8 +22,8 @@ class CountDownActionCreator {
   }
 
   /// 开始倒计时。
-  static Action startTimer(var currentSecond) {
-    return Action(CountDownAction.startTimer, payload: currentSecond);
+  static Action startTimer() {
+    return Action(CountDownAction.startTimer, payload: null);
   }
 
   /// 取消倒计时。
