@@ -7,7 +7,6 @@ import 'state.dart';
 Effect<CountDownState> buildEffect() {
   return combineEffects(<Object, Effect<CountDownState>>{
     Lifecycle.initState: _init,
-    CountDownAction.action: _onAction,
   });
 }
 
@@ -25,5 +24,3 @@ void _init(Action action, Context<CountDownState> ctx) {
     });
   }
 }
-
-void _onAction(Action action, Context<CountDownState> ctx) {}

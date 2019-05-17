@@ -12,8 +12,6 @@ class CountDownComponent extends Component<CountDownState> {
           reducer: buildReducer(),
           view: buildView,
           dependencies: Dependencies<CountDownState>(
-              adapter: null,
-              slots: <String, Dependent<CountDownState>>{
-              }),
+              adapter: null, slots: <String, Dependent<CountDownState>>{}),
         );
 }
