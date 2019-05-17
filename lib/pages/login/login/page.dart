@@ -1,4 +1,5 @@
 import 'package:fish_redux/fish_redux.dart';
+import 'package:flutter_fish_demo/components/count_down/count_down/component.dart';
 
 import 'effect.dart';
 import 'reducer.dart';
@@ -15,6 +16,7 @@ class LoginPage extends Page<LoginState, Map<String, dynamic>> {
             dependencies: Dependencies<LoginState>(
                 adapter: null,
                 slots: <String, Dependent<LoginState>>{
+                  'count_down': LoginConnector() + CountDownComponent(),
                 }),
             middleware: <Middleware<LoginState>>[
             ],);

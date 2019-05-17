@@ -8,19 +8,11 @@ Reducer<PreloadState> buildReducer() {
   return asReducer(
     <Object, Reducer<PreloadState>>{
 //      PreloadAction.startTimer: _startTimer,
-//      PreloadAction.cancelTimer: _cancelTimer,
     },
   );
 }
 //
 //PreloadState _startTimer(PreloadState state, Action action) {
 //  final PreloadState newState = state.clone();
-//  return newState;
-//}
-//
-//PreloadState _cancelTimer(PreloadState state, Action action) {
-//  final PreloadState newState = state.clone();
-//  final CountDownState countDownState = action.payload;
-//  newState.showAd = !countDownState.countDownFinish;
 //  return newState;
 //}

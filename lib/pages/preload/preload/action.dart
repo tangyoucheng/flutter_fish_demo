@@ -5,8 +5,6 @@ import 'package:fish_redux/fish_redux.dart';
 // Reducer 接受处理的 Action，以{verb} 命名
 enum PreloadAction {
   onLoad,
-//  startTimer,
-//  cancelTimer,
 }
 
 class PreloadActionCreator {
@@ -14,13 +12,4 @@ class PreloadActionCreator {
     return Action(PreloadAction.onLoad, payload: payload);
   }
 
-//  /// 启动倒计时的计时器。
-//  static Action startTimer() {
-//    return const Action(PreloadAction.startTimer,payload: null);
-//  }
-//
-//  /// 取消倒计时的计时器。
-//  static Action cancelTimer() {
-//    return const Action(PreloadAction.cancelTimer,payload: null);
-//  }
 }

@@ -14,28 +14,7 @@ Effect<PreloadState> buildEffect() {
 }
 
 void _initState(Action action, Context<PreloadState> ctx) {
-
-//  CountDownState countDownState = CountDownState();
-//  countDownState.countDownFinish = true;
-//  ctx.dispatch(CountDownActionCreator.cancelTimer(countDownState));
-
-var  currentSecond = 5;
-  /// 启动倒计时的计时器
-//  Timer.periodic(Duration(seconds: 1), (timer) {
-//    if (currentSecond <= 1) {
-//      timer?.cancel();
-//      CountDownState countDownState = CountDownState();
-//      countDownState.countDownFinish = true;
-//      ctx.dispatch(CountDownActionCreator.cancelTimer(countDownState));
-//
-//    }
-//    currentSecond--;
-//    ctx.state.seconds = currentSecond;
-//    ctx.dispatch(CountDownActionCreator.startTimer(currentSecond));
-//  });
-
-
-  //do something on initState
+  //do something on onLoad
 }
 void _onLoad(Action action, Context<PreloadState> ctx) {
   //do something on onLoad

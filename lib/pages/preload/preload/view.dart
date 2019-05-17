@@ -17,7 +17,7 @@ Widget buildView(PreloadState state, Dispatch dispatch, ViewService viewService)
           color: Colors.white,
           child: Text(
             'dfdfd',
-            style: TextStyle(decoration: TextDecoration.none),
+            style: TextStyle(decoration: TextDecoration.none)
           ),
         ),
 //        offstage: state.showAd,
