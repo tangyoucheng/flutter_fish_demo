@@ -9,16 +9,14 @@ import 'view.dart';
 class LoginPage extends Page<LoginState, Map<String, dynamic>> {
   LoginPage()
       : super(
-            initState: initState,
-            effect: buildEffect(),
-            reducer: buildReducer(),
-            view: buildView,
-            dependencies: Dependencies<LoginState>(
-                adapter: null,
-                slots: <String, Dependent<LoginState>>{
-                  'count_down': LoginConnector() + CountDownComponent(),
-                }),
-            middleware: <Middleware<LoginState>>[
-            ],);
-
+          initState: initState,
+          effect: buildEffect(),
+          reducer: buildReducer(),
+          view: buildView,
+          dependencies:
+              Dependencies<LoginState>(adapter: null, slots: <String, Dependent<LoginState>>{
+            'count_down': LoginConnector() + CountDownComponent(),
+          }),
+          middleware: <Middleware<LoginState>>[],
+        );
 }
