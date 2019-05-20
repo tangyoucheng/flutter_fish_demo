@@ -31,7 +31,6 @@ void _onObscurePassword(Action action, Context<LoginState> ctx) {
 //登录处理
 void _onLogin(Action action, Context<LoginState> ctx) {
   //验证页面入力的数据
-
   if (ctx.state.formKey.currentState.validate()) {
     //保存页面入力的数据
     ctx.state.formKey.currentState.save();
