@@ -33,8 +33,9 @@ void _onLogin(Action action, Context<LoginState> ctx) {
   //验证页面入力的数据
 
   if (ctx.state.formKey.currentState.validate()) {
-    ctx.dispatch(LoginActionCreator.obscurePassword());
-
+    //保存页面入力的数据
+    ctx.state.formKey.currentState.save();
+//    ctx.dispatch(LoginActionCreator.obscurePassword());
 //    Navigator.of(ctx.context).pop<LoginState>(ctx.state.toDo);
     Navigator.of(ctx.context).pushNamed('portal');
   }
